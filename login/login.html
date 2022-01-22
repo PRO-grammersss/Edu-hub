@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            input {
+                
+                font-family: tahoma;
+                font-size: large;
+            }
+            
+            form {
+                text-align: center;
+                font-size: large;
+            }
+
+            p {
+                font-family: tahoma;
+                text-align: center;
+            }
+            
+            h1 {
+                font-family: tahoma;
+                text-align: center;
+            }
+           
+            li {
+                float: left;
+
+            }
+           
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                
+            }
+            
+            li a:hover {
+                background-color: lightslategray;
+    
+    
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+                }
+            
+
+        </style>
+    </head>
+    <body>
+        
+        {% if message %}
+        <p>Message from server: {{ message }}</p>
+        {% endif %}
+        <h1>Log in to the website here</h1>
+        <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <br>
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <br>
+        <input type="submit" value="Login">
+        
+        
+        </form>
+    </body>
+</html>
