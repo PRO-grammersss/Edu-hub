@@ -1,24 +1,34 @@
-from audioop import reverse
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.views.generic.list import ListView
-from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
-from .models import Task
-from django.urls import reverse_lazy
+from django.shortcuts import render, redirect
+from django.contrib import messages
+  
+  
+from .forms import TodoForm
+from .models import Todo
+  
+  
+def index(request):
+  
+    item_list = Todo.objects.order_by("-date")
+    if request.method == "POST":
+        form = TodoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('todo')
+    form = TodoForm()
+  
+    page = {
+             "forms" : form,
+             "list" : item_list,
+             "title" : "TODO LIST",
+           }
+    return render(request, 'todo/index.html', page)
+  
+  
+def remove(request, item_id):
+    item = Todo.objects.get(id=item_id)
+    item.delete()
+    messages.info(request, "item removed !!!")
+    return redirect('todo')
 
-class taskList(ListView):
-    model = Task
-    context_object_name = 'tasks'
-
-class TaskDetail(DetailView):
-    model = Task
-    context_object_name = 'task'
-    template_name = 'todo/task.html'
-
-class TaskCreate(CreateView): 
-    model = Task
-    fields = ['__all__']
-    success_url = reverse_lazy('tasks')
 
     
