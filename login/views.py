@@ -13,7 +13,7 @@ def index(request):  #Function for the index view
             'message': 'Sign in first'
         }) 
     else: #If user is authenticated and not anonymous 
-        return render(request, "ccr/index.html") #Sends the user to the home page
+        return render(request, "/index.html") #Sends the user to the home page
 
 def login_view(request): 
     if request.method == "POST": #Uses the post method
@@ -24,7 +24,7 @@ def login_view(request):
             login(request, user) #Logs the user in 
             return HttpResponseRedirect(reverse("index")) #Sends the user to the home page 
         else: #If the credentials are invalid or wrong
-            return render(request, "ccr/login.html", { #Sends the user to the login page agian
+            return render(request, "/login.html", { #Sends the user to the login page agian
                 "message": "Invalid credentials." #Says that the credentials are invalid
                 })
     #Post ends here
