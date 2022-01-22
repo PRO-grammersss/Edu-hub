@@ -6,9 +6,9 @@
     <header>
         <ul>
             <li><a target="_blank" href="todolist.html">todolist</a></li>
-            <li><a target="_blank" href="notepad.html">notepad</a></li>
+            <li><a target="_blank" href="notepad/templates/notepad.html">notepad</a></li>
             <li><a target="_blank" href="index.html">home</a></li>
-            <li><a target="_blank" href="forum.html">forum</a></li>
+            <li><a target="_blank" href="/forum/template/forum.html">forum</a></li>
         </ul>
     </header>
 </head>
@@ -41,7 +41,17 @@
                 <option value='36'>36</option>
                 <option value='38'>38</option>
                 <option value='40'>40</option>
+                <option value='42'>42</option>
+                <option value='44'>44</option>
+                <option value='46'>46</option>
+                <option value='48'>48</option>
+                <option value='50'>50</option>
             </select>
+            <select id="changefontdropdown" onchange="javascript:fontchange()" class="changefont">
+                <option value='will add later'>will add later</option>
+                <option value='will add later'>will add later</option>
+                <option value='will add later'>will add later</option>
+                </select>
             <button onclick="saveTextAsFile(notesarea.value,'notes.txt')">Download</button>
         </div>
         <textarea id="notesarea" class="mainnotesarea" placeholder="Write and manage your notes here"></textarea>
