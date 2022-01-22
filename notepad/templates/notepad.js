@@ -23,3 +23,7 @@ function makebold() {
 function makeitalic() {
     document.getElementById("notesarea").style.fontStyle = "italic";
 }
+
+function cleartext() {
+    document.getElementById("notesarea").value = ""
+}
