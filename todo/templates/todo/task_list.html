@@ -2,9 +2,9 @@
 
 <table>
     <tr>Item1</tr>
-    {% for task in task %}
+    {% for Task in object_list %}
     <tr>
-        <td>{{task.title}}</td>
+        <td>{{Task.name}}</td>
     </tr>
     {% empty %}
     <h3>No items found</h3>
