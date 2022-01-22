@@ -1,7 +1,7 @@
 function main() {
-    let addbutton = document.cgetelementById('todoadd');
-    let todocontainer = document.cgetelementById('todocontainer');
-    let input = document.createElement('inputfield');
+    let addbutton = document.getElementById('todoadd');
+    let todocontainer = document.getElementById('todocontainer');
+    let input = document.getElementById('inputfield');
     
     addbutton.addEventListener('click', function() {
         var paragraph = document.createElement('p');
