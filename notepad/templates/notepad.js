@@ -16,8 +16,10 @@ function saveTextAsFile(textToWrite, fileNameToSaveAs) {
 }
 
 function makebold() {
-    var text = document.getElementById("notesarea");
-    notesarea.style.fontWeight = "bold";
+    document.getElementById("notesarea").style.fontWeight = "bold";;
 
+}
 
+function makeitalic() {
+    document.getElementById("notesarea").style.fontStyle = "italic";
 }
