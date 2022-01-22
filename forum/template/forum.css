@@ -81,46 +81,81 @@
     }
   }
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-::selection{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  ::selection{
     color: #fff;
     background: #1a81ff;
   }
-.container{
+  .container{
     width: 500px;
-    height: 380px;
-    overflow:hidden;
+    height: 480px;
+    overflow: hidden;
     background: #fff;
     border-radius: 10px;
-    transition:height 0.2s ease-in;
+    transition: height 0.2s ease;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
   }
-.container.active{
+  .container.active{
     height: 590px;
   }
-.container .wrapper{
+  .container .wrapper{
     width: 1000px;
     display: flex;
   }
-.container .wrapper section{
+  .container .wrapper section{
     width: 500px;
     background: #fff;
   }
-.container .post{
-     transition: margin-left 0.18s ease;
+  .container img{
+    cursor: pointer;
   }
-.container.active .post{
+  .container .post{
+    transition: margin-left 0.18s ease;
+  }
+  .container.active .post{
     margin-left: -500px;
   }
-.post header{
+  .post header{
     font-size: 22px;
     font-weight: 600;
     padding: 17px 0;
     text-align: center;
     border-bottom: 1px solid #bfbfbf;
+  }
+  .post form{
+    margin: 20px 25px;
+  }
+  .post form .content,
+  .audience .list li .column{
+    display: flex;
+    align-items: center;
+  }
+  .post form .content img{
+    cursor: default;
+    max-width: 52px;
+  }
+  .post form .content .details{
+    margin: -3px 0 0 12px;
+  }
+  form .content .details p{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .content .details .privacy{
+    display: flex;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 11px;
+    margin-top: 3px;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 98px;
+    background: #E4E6EB;
+    justify-content: space-between;
   }
