@@ -6,11 +6,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="stylesheet" type="text/css" href="forum.css">
     </head>
     <body>
         <div class="topnav">
-            <input type="text" placeholder="Search..">
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
           </div>
+          <div class="container">
+            <div class="wrapper">
+              <section class="post">
+                <header>Create Post</header>
+                <form action="#">
+                  <div class="content"> <!--Add account pfp and name-->
+                    <div class="details">
+                      <div class="privacy">
+                        <i class="fas fa-user-friends"></i>
+                        <span>Friends</span>
+                        <i class="fas fa-caret-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <textarea placeholder="What's on your mind?" spellcheck="false" required></textarea><!--Add account name-->
+                  <div class="theme-emoji">
+                  </div>
+                  <div class="options">
+                    <p>Add to Your Post</p>
     </body>
 </html>

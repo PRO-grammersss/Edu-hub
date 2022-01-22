@@ -14,3 +14,16 @@ function saveTextAsFile(textToWrite, fileNameToSaveAs) {
 
     downloadLink.click();
 }
+
+function makebold() {
+    document.getElementById("notesarea").style.fontWeight = "bold";;
+
+}
+
+function makeitalic() {
+    document.getElementById("notesarea").style.fontStyle = "italic";
+}
+
+function cleartext() {
+    document.getElementById("notesarea").value = ""
+}
