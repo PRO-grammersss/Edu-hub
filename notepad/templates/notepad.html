@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="notepadstyle.css">
     <script src="notepad.js"></script>
     <div class="main">
-        <h1> Notepad, save all of your notes here</h1>
-
-        <div class="buttonbar">
-            <button type="button" onclick="makebold()" class="makebold" data-placement="top">Bold</button>
-            <button type="button" onclick="makeitalic()" class="italic" data-placement="top">Italic</button>
-            <button type="button" onclick="cleartext()" class="cleartext" data-placement="top">Clear Text</button>
-            <select id="fontsizedropdown" onchange="javascript:fontsizechange()" class="fontsize">
+        <div class="sidebar" id="sidebar">
+        </div>
+        <div class="editnotes">
+            <h1> Notepad, save all of your notes here</h1>
+            <div class="buttonbar">
+                <button type="button" onclick="makebold()" class="makebold" data-placement="top">Bold</button>
+                <button type="button" onclick="makeitalic()" class="italic" data-placement="top">Italic</button>
+                <button type="button" onclick="cleartext()" class="cleartext" data-placement="top">Clear Text</button>
+                <select id="fontsizedropdown" onchange="javascript:fontsizechange()" class="fontsize">
                 <option value='8'>8</option>
                 <option value='10'>10</option>
                 <option value='12'>12</option>
@@ -32,7 +34,7 @@
                 <option value='18'>18</option>
                 <option value='20'>20</option>
                 <option value='22'>22</option>
-                <option value='24'>24</option>
+                <option value='24' selected>24</option>
                 <option value='26'>26</option>
                 <option value='28'>28</option>
                 <option value='30'>30</option>
@@ -47,17 +49,21 @@
                 <option value='48'>48</option>
                 <option value='50'>50</option>
             </select>
-            <select id="changefontdropdown" onchange="javascript:fontchange()" class="changefont">
+                <select id="changefontdropdown" onchange="javascript:fontchange()" class="changefont">
                 <option value='Times New Roman'>Times New Roman</option>
                 <option value='Verdana'>Verdana</option>
-                </select>
-            <button onclick="saveTextAsFile(notesarea.value,'notes.txt')">Download</button>
-        </div>
-        <textarea id="notesarea" class="mainnotesarea" placeholder="Write and manage your notes here"></textarea>
-        <br>
+                <option value='Arial' selected>Arial</option>
+            </select>
+                <input type="text" id="subjectname" class="subjectname" placeholder="Name of subject"></input>
+                <button id="savenotes" class="savenotes" onclick="javascript:savenotes()">Save</button>
+                <button onclick="saveTextAsFile(notesarea.value,'notes.txt')">Download</button>
+                <textarea id="notesarea" class="mainnotesarea" placeholder="Write and manage your notes here"></textarea>
+                <br>
+            </div>
 
-        <br>
-    </div>
+        </div>
+
+
 
 
 

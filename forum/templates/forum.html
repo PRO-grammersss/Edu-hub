@@ -10,31 +10,24 @@
         <link rel="stylesheet" type="text/css" href="forum.css">
     </head>
     <body>
-        <div class="topnav">
-            <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button id= "submit" type="submit">Submit</button>
-                </form>
-              </div>
+      <div class="topnav">
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button id= "submit" type="submit">Submit</button>
+            </form>
           </div>
+        </div>
           <div class="container">
             <div class="wrapper">
               <section class="post">
                 <header>Create Post</header>
                 <form action="#">
-                  <div class="content"> <!--Add account pfp and name-->
+                  <div class="content"> 
                     <div class="details">
-                      <div class="privacy">
-                        <i class="fas fa-user-friends"></i>
-                        <span>Friends</span>
-                        <i class="fas fa-caret-down"></i>
-                      </div>
                     </div>
                   </div>
-                  <textarea placeholder="What's on your mind?" spellcheck="false" required></textarea><!--Add account name-->
-                  <div class="theme-emoji">
-                  </div>
+                  <textarea id="myTextArea" placeholder="What's your question?" spellcheck="false" required></textarea><!--Add account name-->
                   <div class="options">
                     <p>Add to Your Post</p>
                     <ul class="list">
@@ -43,72 +36,14 @@
                         <li><img src="icons8-more-30.png" alt="gallery"></li>
                     </ul>
                     </div>
-                    <button class="postb">Post</button>
+                    <button onclick="send123()"class="postb">Post</button>
                   </form>
                 </section>
-                <section class="audience">
-                  <header>
-                    <div class="arrow-back"><i class="fas fa-arrow-left"></i></div>
-                    <p>Select Audience</p>
-                  </header>
-                  <div class="content">
-                    <p>Who can see your post?</p>
-                    <span>Your post will show up in News Feed, on your profile and in search results.</span>
-                  </div>
-                  <ul class="list">
-                    <li>
-                      <div class="column">
-                        <div class="icon"><i class="fas fa-globe-asia"></i></div>
-                        <div class="details">
-                          <p>Public</p>
-                          <span>Anyone on or off Facebook</span>
-                        </div>
-                      </div>
-                      <div class="radio"></div>
-                    </li>
-                    <li class="active">
-                      <div class="column">
-                        <div class="icon"><i class="fas fa-user-friends"></i></div>
-                        <div class="details">
-                          <p>Friends</p>
-                          <span>Your friends on Facebook</span>
-                        </div>
-                      </div>
-                      <div class="radio"></div>
-                    </li>
-                    <li>
-                      <div class="column">
-                        <div class="icon"><i class="fas fa-user"></i></div>
-                        <div class="details">
-                          <p>Specific</p>
-                          <span>Only show to some friends</span>
-                        </div>
-                      </div>
-                      <div class="radio"></div>
-                    </li>
-                    <li>
-                      <div class="column">
-                        <div class="icon"><i class="fas fa-lock"></i></div>
-                        <div class="details">
-                          <p>Only me</p>
-                          <span>Only you can see your post</span>
-                        </div>
-                      </div>
-                      <div class="radio"></div>
-                    </li>
-                    <li>
-                      <div class="column">
-                        <div class="icon"><i class="fas fa-cog"></i></div>
-                        <div class="details">
-                          <p>Custom</p>
-                          <span>Include and exclude friends</span>
-                        </div>
-                      </div>
-                      <div class="radio"></div>
-                    </li>
-                  </ul>
                 </section>
               </div>
+            </div>
+            <hr>
+            <div id="output">
             </div>
     </body>
 </html>
