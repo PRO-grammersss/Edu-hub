@@ -13,7 +13,7 @@
     </header>
 </head>
 
-<body>
+<body onload="javascript:onloadbody();">
     <link rel="stylesheet" href="notepadstyle.css">
     <script src="notepad.js"></script>
     <div class="main">
@@ -48,9 +48,8 @@
                 <option value='50'>50</option>
             </select>
             <select id="changefontdropdown" onchange="javascript:fontchange()" class="changefont">
-                <option value='will add later'>will add later</option>
-                <option value='will add later'>will add later</option>
-                <option value='will add later'>will add later</option>
+                <option value='Times New Roman'>Times New Roman</option>
+                <option value='Verdana'>Verdana</option>
                 </select>
             <button onclick="saveTextAsFile(notesarea.value,'notes.txt')">Download</button>
         </div>

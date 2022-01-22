@@ -38,7 +38,16 @@ function fontsizechange() {
 }
 
 function fontchange() {
+    var changeFontStyle = function(font) {
+        document.getElementById("notesarea").style.fontFamily = font.value;
+    }
 
 
+}
+
+function onloadbody() {
+    window.alert("loaded")
+    var textarea = document.getElementById("notesarea")
+    textarea.style.fontSize = 8;
 
 }
