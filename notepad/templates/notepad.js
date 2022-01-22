@@ -46,8 +46,31 @@ function fontchange() {
 }
 
 function onloadbody() {
-    window.alert("loaded")
     var textarea = document.getElementById("notesarea")
     textarea.style.fontSize = 8;
+
+}
+
+function savenotes() {
+    var nameofsubject = document.getElementById("subjectname");
+    if (nameofsubject.value == "") {
+        window.alert("Please enter the subject name")
+        return;
+    }
+    var mainnotes = document.getElementById("notesarea");
+    if (mainnotes.value == "") {
+        window.alert("Please enter your notes")
+    }
+
+    var sidebardiv = document.getElementById("sidebar");
+    var newelement = document.createElement("a");
+    sidebardiv.id = nameofsubject.value + 'newnotesarea';
+    var newtextarea = document.createTextNode(nameofsubject.value);
+    var hiddennotes = document.createTextNode(mainnotes.value);
+    hiddennotes.id = nameofsubject.value + 'hiddennotes';
+    newelement.appendChild(hiddennotes);
+    newelement.appendChild(newtextarea);
+    sidebardiv.appendChild(newelement);
+
 
 }
