@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import taskList, TaskDetail, TaskCreate
+from todo import views
+from django.contrib import admin 
 
 
-urlpatterns =[
-    path('', taskList.as_view(), name='tasks'),
-    path('task/<int:pk>/', TaskDetail.as_view(), name='task'),
-    path('task-create/', TaskCreate.as_view(), name='task-create'),
+urlpatterns = [
+
+    path('', views.index, name="todo"),
+    path('del/', views.remove, name="del"),
+    path('admin/', admin.site.urls),
 ]
