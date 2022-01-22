@@ -93,7 +93,7 @@
   }
   .container{
     width: 500px;
-    height: 480px;
+    height: 380px;
     overflow: hidden;
     background: #fff;
     border-radius: 10px;
@@ -158,4 +158,30 @@
     max-width: 98px;
     background: #E4E6EB;
     justify-content: space-between;
+  }
+  .details .privacy span{
+    font-size: 13px;
+    margin-top: 1px;
+    font-weight: 500;
+  }
+  .details .privacy i:last-child{
+    font-size: 13px;
+    margin-left: 1px;
+  }
+  form :where(textarea, button){
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+  form textarea{
+    resize: none;
+    font-size: 18px;
+    margin-top: 30px;
+    min-height: 100px;
+  }
+  form textarea::placeholder{
+    color: #858585;
+  }
+  form textarea:focus::placeholder{
+    color: #b3b3b3;
   }
