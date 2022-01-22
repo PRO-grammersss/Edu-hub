@@ -16,13 +16,21 @@
 <body>
     <link rel="stylesheet" href="notepadstyle.css">
     <script src="notepad.js"></script>
-    <h1>Notepad, save all of your notes here</h1>
-    <p>you can add your notes here</p>
+    <div class="format">
+        <h1> Notepad, save all of your notes here</h1>
 
-    <textarea id="notesarea" placeholder="Write and manage your notes here" rows="10" cols="50"></textarea>
-    <br>
-    <button onclick="saveTextAsFile(notepad.value,'notes.txt')">Download</button>
-    <br>
+        <div class="button">
+            <button type="button" onclick="makebold()" class="makebold" data-placement="top">Bold</button>
+            <button type="button" onclick="italic()" class="italic" data-placement="top">Italic</button>
+            <button onclick="saveTextAsFile(notesarea.value,'notes.txt')">Download</button>
+            <button type="button" onclick="cleartext()" class="cleartext" data-placement="top">Clear Text</button>
+        </div>
+
+        <textarea id="notesarea" placeholder="Write and manage your notes here" rows="15" cols="100"></textarea>
+        <br>
+
+        <br>
+    </div>
 
 
 
