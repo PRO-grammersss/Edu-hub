@@ -7,7 +7,9 @@ function main() {
         var paragraph = document.createElement('p');
         paragraph.classList.add('paragraph-styling');
         paragraph.innerText = input.value;
+
         todocontainer.appendChild(paragraph);
+        inputfield.value="";
     }
     )}
 
