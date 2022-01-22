@@ -151,7 +151,6 @@ h1 {
     align-items: center;
 }
 
-header,
 ul {
     display: flex;
     flex-direction: row;
@@ -169,8 +168,8 @@ header ul li {
     list-style-type: none;
 }
 
-header ul li:not(:nth-child(3)) {
-    margin-right: 30px;
+li {
+    font-family: tahoma;
 }
 
 header ul li a:hover {
@@ -179,7 +178,7 @@ header ul li a:hover {
 }
 
 header ul li a {
-    color: rgb(231, 5, 5);
+    color: rgb(5, 231, 182);
     font-weight: bold;
     font-size: 30px;
     outline: none;
