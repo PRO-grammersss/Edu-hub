@@ -14,7 +14,7 @@
             <div class="search-container">
                 <form action="/action_page.php">
                   <input type="text" placeholder="Search.." name="search">
-                  <button type="submit">Submit</button>
+                  <button id= "submit" type="submit">Submit</button>
                 </form>
               </div>
           </div>
@@ -43,7 +43,7 @@
                         <li><img src="icons8-more-30.png" alt="gallery"></li>
                     </ul>
                     </div>
-                    <button>Post</button>
+                    <button class="postb">Post</button>
                   </form>
                 </section>
                 <section class="audience">
@@ -76,5 +76,39 @@
                       </div>
                       <div class="radio"></div>
                     </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                        <div class="details">
+                          <p>Specific</p>
+                          <span>Only show to some friends</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-lock"></i></div>
+                        <div class="details">
+                          <p>Only me</p>
+                          <span>Only you can see your post</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-cog"></i></div>
+                        <div class="details">
+                          <p>Custom</p>
+                          <span>Include and exclude friends</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
     </body>
 </html>
