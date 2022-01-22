@@ -27,3 +27,12 @@ function makeitalic() {
 function cleartext() {
     document.getElementById("notesarea").value = ""
 }
+
+function fontsizechange() {
+    var changefontsize = document.getElementById('fontsizedropdown');
+    changefontsize.onchange = function() {
+        var textarea = document.getElementById("notesarea")
+        textarea.style.fontSize = this.value + "px";
+    };
+
+}
