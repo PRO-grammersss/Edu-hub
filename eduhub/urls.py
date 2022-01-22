@@ -20,9 +20,5 @@ from forum import views as forumviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', loginviews.index, name="index"),
-    path('login/', loginviews.login_view, name="login"),
-    path('logout/', loginviews.logout_view, name="logout"),
-    path('forum/', forumviews.main)]
-
+]
 
