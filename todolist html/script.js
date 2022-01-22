@@ -12,10 +12,10 @@ function main() {
         inputfield.value="";
 
         paragraph.addEventListener('click', function() {
-            paragraph.style.textDecoration = "line-through"
+            paragraph.style.textDecoration = "line-through";
         })
         paragraph.addEventListener('dblclick', function() {
-            paragraph.removeChild(paragraph)
+            paragraph.removeChild(paragraph);
         })
     })
 }
