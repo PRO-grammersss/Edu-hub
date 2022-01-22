@@ -1,0 +1,57 @@
+
+<html> 
+<head>
+    <style>
+          h1 {
+                font-family: tahoma;
+                text-align: center;
+            }
+            p {
+                font-family: verdana;
+                text-align: center;
+                font-size: large;
+            }
+            a {
+                color: lightskyblue;
+                font-family: verdana;
+    
+            }
+            li {
+                float: left;
+
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                
+            }
+            li a:hover {
+                background-color: lightslategray;
+    
+    
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+                }
+                
+            
+            
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li><a class="active" href="{% url 'index' %}">Home Page</a></li>
+</ul>
+    <h1>Sample Heading</h1>
+
+
+</body>
+</html>
