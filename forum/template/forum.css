@@ -32,3 +32,19 @@
     text-decoration:none;
     font-size: 17px;
 }
+.topnav a:hover{
+    background-color:rgb(226, 226, 226);
+    color: black;
+}
+.topnav a.active{
+    background-color: rgb(151, 179, 255);
+    color: white;
+}
+.topnav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
