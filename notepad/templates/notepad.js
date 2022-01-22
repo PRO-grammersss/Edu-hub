@@ -36,3 +36,9 @@ function fontsizechange() {
     };
 
 }
+
+function fontchange() {
+
+
+
+}
