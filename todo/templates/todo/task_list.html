@@ -1,1 +1,12 @@
-e
+<h1>To Do List</h1>
+
+<table>
+    <tr>Item1</tr>
+    {% for task in task %}
+    <tr>
+        <td>{{task.title}}</td>
+    </tr>
+    {% empty %}
+    <h3>No items found</h3>
+    {% endfor %}
+</table>
