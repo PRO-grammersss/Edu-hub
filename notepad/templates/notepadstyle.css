@@ -18,6 +18,17 @@
     border-width: thick;
 }
 
+.changefont {
+    color: rgb(27, 100, 235);
+    margin-left: 30px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    border-radius: 10px;
+    width: 100px;
+    border-color: #00a8f7;
+    border-width: thick;
+}
+
 textarea {
     padding: 5%;
     border-color: #00a8f7;
@@ -50,7 +61,45 @@ h1 {
 
 .mainnotesarea {
     width: 90%;
-    height: 400px;
+    height: 375px;
     justify-content: center;
     align-items: center;
+}
+
+header,
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+header {
+    background-color: #000000c9;
+    box-shadow: 0 0 20px 0 #6246ea;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li:not(:nth-child(3)) {
+    margin-right: 30px;
+}
+
+header ul li a:hover {
+    transition: 0.1s all;
+    background-color: #000000d5;
+}
+
+header ul li a {
+    color: rgb(231, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s all;
+    padding: 13px 20px;
+    border-radius: 5px;
 }
