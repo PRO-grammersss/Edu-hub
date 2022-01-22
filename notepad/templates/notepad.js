@@ -14,3 +14,10 @@ function saveTextAsFile(textToWrite, fileNameToSaveAs) {
 
     downloadLink.click();
 }
+
+function makebold() {
+    var text = document.getElementById("notesarea");
+    notesarea.style.fontWeight = "bold";
+
+
+}
