@@ -30,25 +30,23 @@ function cleartext() {
 
 function fontsizechange() {
     var changefontsize = document.getElementById('fontsizedropdown');
-    changefontsize.onchange = function() {
-        var textarea = document.getElementById("notesarea")
-        textarea.style.fontSize = this.value + "px";
-    };
+    var textarea = document.getElementById("notesarea")
+    textarea.style.fontSize = changefontsize.value + "px";
 
 }
 
 function fontchange() {
-    var changeFontStyle = function(font) {
-        document.getElementById("notesarea").style.fontFamily = font.value;
-    }
+    var changeFontStyle = document.getElementById('changefontdropdown');
+    document.getElementById("notesarea").style.fontFamily = changeFontStyle.value;
+
 
 
 }
 
 function onloadbody() {
-    var textarea = document.getElementById("notesarea")
-    textarea.style.fontSize = 8;
-
+    var textarea = document.getElementById("notesarea");
+    textarea.style.fontSize = '24px';
+    textarea.style.fontFamily = 'Arial';
 }
 
 function savenotes() {
