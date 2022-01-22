@@ -86,3 +86,40 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+::selection{
+    color: #fff;
+    background: #1a81ff;
+  }
+.container{
+    width: 500px;
+    height: 480px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    transition: height 0.2s ease;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+.container.active{
+    height: 590px;
+  }
+.container .wrapper{
+    width: 1000px;
+    display: flex;
+  }
+.container .wrapper section{
+    width: 500px;
+    background: #fff;
+  }
+.container .post{
+     transition: margin-left 0.18s ease;
+  }
+.container.active .post{
+    margin-left: -500px;
+  }
+.post header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 17px 0;
+    text-align: center;
+    border-bottom: 1px solid #bfbfbf;
+  }
