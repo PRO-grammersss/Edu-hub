@@ -15,7 +15,7 @@ function main() {
             paragraph.style.textDecoration = "line-through";
         })
         paragraph.addEventListener('dblclick', function() {
-            paragraph.removeChild(paragraph);
+            todocontainer.removeChild(paragraph);
         })
     })
 }
