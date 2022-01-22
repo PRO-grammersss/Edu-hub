@@ -49,6 +49,10 @@ button {
     border-width: thick;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 .buttonbar {
     margin-left: 200px;
 }
