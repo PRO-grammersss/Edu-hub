@@ -22,6 +22,7 @@ urlpatterns = [
     path('todo/', include('todo.urls')),
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     path('notepad/', include('notepad.urls')),
     path('main/', include('main.urls')),
     path('login/', include('login.urls')),
@@ -29,11 +30,16 @@ urlpatterns = [
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     path('forum/', include('forum.urls')),
     path('main/', include('main.urls')),
     path('notepad/', include('notepad.urls')),
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
