@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Todo</title>
+    <style> 
+    body {
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", 'sans-serif', 'Arial';
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    #inputfield {
+        width: 300px;
+        height: 50px;
+        border: 1px solid black;
+        outline: none;
+        font-size: 25px;
+        vertical-align: middle;
+    }
+
+    #todoadd {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        vertical-align: middle;
+        font-size: 30px;
+    }
+
+    .todos {
+        margin-top: 25px;
+    }
+
+    .paragraph-styling {
+        margin: 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    header {
+        background-color: #000000c9;
+        box-shadow: 0 0 20px 0 #6246ea;
+    }
+
+    header ul li {
+        list-style-type: none;
+    }
+
+    li {
+        font-family: tahoma;
+    }
+
+    header ul li a:hover {
+        transition: 0.1s all;
+        background-color: #000000d5;
+    }
+
+    header ul li a {
+        color: rgb(5, 231, 182);
+        font-weight: bold;
+        font-size: 30px;
+        outline: none;
+        text-decoration: none;
+        transition: 0.3s all;
+        padding: 13px 20px;
+        border-radius: 5px;
+    }
+    </style>
+    <header>
+        <ul>
+            <li><a target="_blank" href="../todolist/todolist.HTML">todolist</a></li>
+            <li><a target="_blank" href="../notepad/templates/notepad.html">notepad</a></li>
+            <li><a target="_blank" href="../main/templates/index.html">home</a></li>
+            <li><a target="_blank" href="../forum/templates/forum.html">forum</a></li>
+        </ul>
+    </header>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <div class="container">
+        <input id="inputfield" type="text"></input><button id="todoadd" onclick="javascript:main()">+</button>
+        <div class="todos" id="todocontainer">
+        </div>
+    </div>
+    <script>function main() {
+    let addbutton = document.getElementById('todoadd');
+    let todocontainer = document.getElementById('todocontainer');
+    let input = document.getElementById('inputfield');
+    
+    addbutton.addEventListener('click', function() {
+        var paragraph = document.createElement('p');
+        paragraph.classList.add('paragraph-styling');
+        paragraph.innerText = input.value;
+
+        todocontainer.appendChild(paragraph);
+        inputfield.value="";
+
+        paragraph.addEventListener('click', function() {
+            paragraph.style.textDecoration = "line-through";
+        })
+        paragraph.addEventListener('dblclick', function() {
+            todocontainer.removeChild(paragraph);
+        })
+    })
+}
+</script>
+</body>
+
+</html>
