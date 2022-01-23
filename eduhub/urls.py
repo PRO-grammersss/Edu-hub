@@ -15,33 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from forum import views as forumviews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('todo/', include('todo.urls')),
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    path('notepad/', include('notepad.urls')),
-    path('main/', include('main.urls')),
-    path('login/', include('login.urls')),
-    path('forum/', include('forum.urls')),
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    path('forum/', include('forum.urls')),
-    path('main/', include('main.urls')),
-    path('notepad/', include('notepad.urls')),
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ]
 
