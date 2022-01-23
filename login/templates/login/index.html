@@ -1,57 +1,57 @@
+<header>
+    <ul>
+        <li><a target="_blank" href="todolist.html">todolist</a></li>
+        <li><a target="_blank" href="notepad/templates/notepad.html">notepad</a></li>
+        <li><a target="_blank" href="index.html">home</a></li>
+        <li><a target="_blank" href="/forum/template/forum.html">forum</a></li>
+    </ul>
+</header>
+<style>
+header,
+ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 15px 0;
+}
 
-<html> 
-<head>
-    <style>
-          h1 {
-                font-family: tahoma;
-                text-align: center;
-            }
-            p {
-                font-family: verdana;
-                text-align: center;
-                font-size: large;
-            }
-            a {
-                color: lightskyblue;
-                font-family: verdana;
-    
-            }
-            li {
-                float: left;
+header {
+background-color: #000000c9;
+box-shadow: 0 0 20px 0 #6246ea;
+}
 
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                
-            }
-            li a:hover {
-                background-color: lightslategray;
-    
-    
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: black;
-                }
-                
-            
-            
-    </style>
-</head>
+header ul li {
+list-style-type: none;
+}
+
+li {
+    font-family: tahoma;
+}
+
+h1 {
+    font-family: tahoma;
+    text-align: center;
+}
+
+
+header ul li a:hover {
+transition: 0.1s all;
+background-color: #000000d5;
+}
+
+header ul li a {
+color: rgb(5, 231, 182);
+font-weight: bold;
+font-size: 30px;
+outline: none;
+text-decoration: none;
+transition: 0.3s all;
+padding: 13px 20px;
+border-radius: 5px;
+}
+</style>
 <body>
 
-
-<ul>
-    <li><a class="active" href="{% url 'index' %}">Home Page</a></li>
-</ul>
-    <h1>Sample Heading</h1>
-
-
+    <h1>Welcome to Edu-hub: Where we are powered by knowledge</h1>
 </body>
-</html>
