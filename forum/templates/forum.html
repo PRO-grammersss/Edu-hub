@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header>
         <ul>
-            <li><a target="_blank" href="todolist.html">todolist</a></li>
-            <li><a target="_blank" href="notepad/templates/notepad.html">notepad</a></li>
-            <li><a target="_blank" href="index.html">home</a></li>
-            <li><a target="_blank" href="/forum/template/forum.html">forum</a></li>
+            <li><a target="_blank" href="../../todolist/todolist.HTML">todolist</a></li>
+            <li><a target="_blank" href="../../notepad/templates/notepad.html">notepad</a></li>
+            <li><a target="_blank" href="../../main/templates/index.html">home</a></li>
+            <li><a target="_blank" href="../../forum/templates/forum.html">forum</a></li>
         </ul>
     </header>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
     <div class="container">
         <div class="wrapper">
             <section class="post">
-                <header>Create Post</header>
+                <header id="myHeader">Create Post</header>
                 <form action="#">
                     <div class="content">
                         <div class="details">
@@ -42,12 +42,11 @@
                     <div class="options">
                         <p>Add to Your Post</p>
                         <ul class="list">
-                            <li><img src="icons8-add-image-30.png" alt="gallery"></li>
-                            <li><img src="icons8-account-30.png" alt="gallery"></li>
-                            <li><img src="icons8-more-30.png" alt="gallery"></li>
-                        </ul>
+                          <li><button class="btn" onclick="openFE()"><img src="icons8-add-image-30.png"></button></li>
+                      </ul>
+
                     </div>
-                    <button onclick="send123()" class="postb">Post</button>
+                    <button onclick="post()" class="postb">Post</button>
                 </form>
             </section>
             </section>
@@ -56,6 +55,7 @@
     <hr>
     <div id="output">
     </div>
+    <script src="forum.js"></script>
 </body>
 
 </html>

@@ -4,3 +4,4 @@ from django.http import HttpResponse
 htmlfilename = "forum.html"
 def main():
     return render(htmlfilename)
+
