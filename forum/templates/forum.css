@@ -9,12 +9,21 @@ body {
     font-size: 30px;
 }
 
+#jshtml{
+  padding: 0px;
+  font-family: Tahoma;
+}
+#output
+{
+	padding: 10px; width:30%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+
 #submit {
     width: 70px;
     height: auto;
     color: black;
 }
-.btn {
+.boton {
   cursor: pointer;
   border: 1px solid #ffffff;
   background-color: transparent;
