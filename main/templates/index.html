@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html>
+<header>
+    <ul>
+        <li><a target="_blank" href="todolist.html">todolist</a></li>
+        <li><a target="_blank" href="notepad/templates/notepad.html">notepad</a></li>
+        <li><a target="_blank" href="index.html">home</a></li>
+        <li><a target="_blank" href="/forum/template/forum.html">forum</a></li>
+        <li><a target="_blank" href="about.html">forum</a></li>
+    </ul>
+</header>
+<style>
+header,
+ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 15px 0;
+}
 
 <head>
     <title> homepage </title>
     <header>
         <ul>
-            <li><a target="_blank" href="../../todo/">todolist</a></li>
             <li><a target="_blank" href="../../notepad/">notepad</a></li>
             <li><a target="_blank" href="../../main/">home</a></li>
             <li><a target="_blank" href="../../forum/">forum</a></li>
@@ -14,9 +29,29 @@
     </header>
 </head>
 
-<body>
-    <button type="button">Chat</button>
-</body>
+header ul li {
+list-style-type: none;
+}
+
+li {
+    font-family: tahoma;
+}
 
 
-</html>
+
+header ul li a:hover {
+transition: 0.1s all;
+background-color: #000000d5;
+}
+
+header ul li a {
+color: rgb(5, 231, 182);
+font-weight: bold;
+font-size: 30px;
+outline: none;
+text-decoration: none;
+transition: 0.3s all;
+padding: 13px 20px;
+border-radius: 5px;
+}
+</style>
