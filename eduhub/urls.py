@@ -20,9 +20,16 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('todo/', include('todo.urls')),
+<<<<<<< Updated upstream
     path('notepad/', include('notepad.urls')),
     path('main/', include('main.urls')),
     path('login/', include('login.urls')),
     path('forum/', include('forum.urls')),
+=======
+    path('forum/', include('forum.urls')),
+    path('main/', include('main.urls')),
+    path('notepad/', include('notepad.urls')),
+
+>>>>>>> Stashed changes
 ]
 
